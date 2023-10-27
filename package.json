@@ -13,24 +13,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/youngkiu/pino-slack-webhook.git"
+    "url": "git+https://github.com/lampofaladdin/pino-aliyun-sls"
   },
   "keywords": [
     "pino",
     "logging",
     "transport",
-    "slack",
-    "webhook"
+    "aliyun",
+    "aliyun-sls"
   ],
-  "author": "YoungKi Lyu",
+  "author": "Aladdin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/youngkiu/pino-slack-webhook/issues"
+    "url": "https://github.com/lampofaladdin/pino-aliyun-sls/issues"
   },
-  "homepage": "https://github.com/youngkiu/pino-slack-webhook#readme",
+  "homepage": "https://github.com/lampofaladdin/pino-aliyun-sls#readme",
   "dependencies": {
     "aliyun-sdk": "^1.12.10",
-    "axios": "^1.4.0",
     "pino-abstract-transport": "^1.0.0"
   },
   "devDependencies": {
