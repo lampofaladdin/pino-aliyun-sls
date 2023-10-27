@@ -1,5 +1,5 @@
-[![ESLint](https://github.com/lampofaladdin/pino-slack-webhook/actions/workflows/eslint.yml/badge.svg)](https://github.com/lampofaladdin/pino-slack-webhook/actions/workflows/eslint.yml)
-[![Node.js CI](https://github.com/lampofaladdin/pino-slack-webhook/actions/workflows/node.js.yml/badge.svg)](https://github.com/lampofaladdin/pino-slack-webhook/actions/workflows/node.js.yml)
+[![ESLint](https://github.com/lampofaladdin/pino-aliyun-sls/actions/workflows/eslint.yml/badge.svg)](https://github.com/lampofaladdin/pino-aliyun-sls/actions/workflows/eslint.yml)
+[![Node.js CI](https://github.com/lampofaladdin/pino-aliyun-sls/actions/workflows/node.js.yml/badge.svg)](https://github.com/lampofaladdin/pino-aliyun-sls/actions/workflows/node.js.yml)
 
 [//]: # ([![npm version]&#40;https://badge.fury.io/js/@wddv/pino-aliyun-sls&#41;]&#40;https://badge.fury.io/js/@wddv/pino-aliyun-sls&#41;)
 [![NPM downloads](http://img.shields.io/npm/dm/@wddv/pino-aliyun-sls.svg?style=flat-square)](http://www.npmtrends.com/@wddv/pino-aliyun-sls)
