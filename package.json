@@ -1,6 +1,6 @@
 {
   "name": "@wddv/pino-aliyun-sls",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "pino-aliyun-sls is a Pino v7+ compatible transport to forward log events to Slack from a dedicated worker",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

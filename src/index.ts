@@ -94,3 +94,7 @@ export default async function (opts: PinoAliSLSOption) {
         return getTimestampe(date);
     }
 }
+
+export type {
+    PinoAliSLSOption
+};
