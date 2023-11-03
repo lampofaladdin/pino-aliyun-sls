@@ -9,9 +9,9 @@ const transport = pino.transport({
                 accessKeyId: 'xxx',
                 secretAccessKey: 'xxx',
                 endpoint: 'http://cn-hangzhou.log.aliyuncs.com',
-                projectName:'xx',
-                logStoreName:'xxx'
-            },
+                projectName: 'xx',
+                logStoreName: 'xxx',
+            }
         },
         {
             target: 'pino-pretty',

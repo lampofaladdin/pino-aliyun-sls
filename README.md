@@ -1,7 +1,8 @@
 [![ESLint](https://github.com/lampofaladdin/pino-aliyun-sls/actions/workflows/eslint.yml/badge.svg)](https://github.com/lampofaladdin/pino-aliyun-sls/actions/workflows/eslint.yml)
 [![Node.js CI](https://github.com/lampofaladdin/pino-aliyun-sls/actions/workflows/node.js.yml/badge.svg)](https://github.com/lampofaladdin/pino-aliyun-sls/actions/workflows/node.js.yml)
 
-[//]: # ([![npm version]&#40;https://badge.fury.io/js/@wddv/pino-aliyun-sls&#41;]&#40;https://badge.fury.io/js/@wddv/pino-aliyun-sls&#41;)
+[//]: # "[![npm version](https://badge.fury.io/js/@wddv/pino-aliyun-sls)](https://badge.fury.io/js/@wddv/pino-aliyun-sls)"
+
 [![NPM downloads](http://img.shields.io/npm/dm/@wddv/pino-aliyun-sls.svg?style=flat-square)](http://www.npmtrends.com/@wddv/pino-aliyun-sls)
 
 # @wddv/pino-aliyun-sls
@@ -19,26 +20,29 @@ npm install --save @wddv/pino-aliyun-sls
 ## Usage
 
 ```js
-import pino from 'pino'
+import pino from "pino";
+import { PinoAliSLSOption } from "@wddv/pino-aliyun-sls";
+
+const logOptions: PinoAliSLSOption = {
+  accessKeyId: "xxx",
+  secretAccessKey: "xxx",
+  endpoint: "http://cn-hangzhou.log.aliyuncs.com",
+  projectName: "xx",
+  logStoreName: "xxx",
+};
 
 const logger = pino({
   transport: {
-    target: '@wddv/pino-aliyun-sls',
-    level: 'info',
-    options: {
-        accessKeyId: 'xxx',
-        secretAccessKey: 'xxx',
-        endpoint: 'http://cn-hangzhou.log.aliyuncs.com',
-        projectName:'xx',
-        logStoreName:'xxx'
-    },
-  }
-})
+    target: "@wddv/pino-aliyun-sls",
+    level: "info",
+    options: logOptions,
+  },
+});
 
-logger.info('test log!');
+logger.info("test log!");
 ```
-[app.ts](example/app.ts)
 
+[app.ts](example/app.ts)
 
 ## Reference
 
