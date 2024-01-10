@@ -11,6 +11,7 @@ export default async function (opts: PinoAliSLSOption) {
         projectName,
         logStoreName,
         logKeys,
+        serializer
     } = opts;
 
     if (
@@ -30,16 +31,27 @@ export default async function (opts: PinoAliSLSOption) {
         endpoint,
         apiVersion: '2015-06-01', //SDK版本号，固定值。
     });
+
+    function serializeValue(value: any): string {
+        if (value instanceof Date) {
+            return value.toISOString();
+        }
+        if (typeof value === 'object' && value !== null) {
+            return JSON.stringify(value); // Serializes nested objects
+        }
+        return String(value);
+    }
+
+    const serializerFunc = typeof serializer === 'function' ? serializer : serializeValue
     
     return build(async (source) => {
         for await (const logRecord of source) {
 
             // 转换日志对象
-            // TODO 无法序列化多层级的对象
             const logContents = Object.keys(logRecord).map((item) => {
                 return {
                     key: item,
-                    value: `${logRecord[item]}`,
+                    value: serializerFunc(logRecord[item]),
                 };
             });
 

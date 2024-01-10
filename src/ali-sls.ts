@@ -72,4 +72,8 @@ export interface PinoAliSLSOption {
          */
         time?: string | number
     }
+    /**
+    Optional custom serializer for the 'value' property in contents = [{ key, value }] array
+    */
+    serializer?(value: any): string
 }
